@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default # Can be "default" or "post"
 title: About
 permalink: /about/
 ---
