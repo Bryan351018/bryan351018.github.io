@@ -29,8 +29,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bryan_bpms
 github_username:  bryan351018
+github: [metadata]
 show_downloads: true
-# google_analytics: [Your Google Analytics tracking ID]
+google_analytics: [G-7VPNWH5BXS]
 # Build settings
 theme: jekyll-theme-hacker
 plugins:

@@ -8,6 +8,12 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 # gem "jekyll", "~> 4.3.3"
+
+# Explicitly specify ostruct, fiddle, and faraday-retry to silence warnings
+gem "ostruct", "~> 0.6.0"
+gem "fiddle", "~> 1.1.2"
+gem "faraday-retry", "~> 2.2.1"
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-theme-hacker", "~> 0.2.0"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -26,7 +32,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
