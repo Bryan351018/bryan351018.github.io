@@ -6,6 +6,6 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{{ site.google_analytics }}', {'cookie_domain': '{{ site.github_username }}.github.io'});
 </script>
 {% endif %}
