@@ -2,6 +2,7 @@
 layout: single
 needs_math: true # This page needs math typesetting
 # If you need chem typesetting, use needs_chem: true
+title: "Desmos Projects"
 toc: true
 toc_label: "Quick jump"
 toc_icon: "file-alt"
@@ -10,10 +11,9 @@ sidebar:
 
 permalink: /projects/desmos/
 ---
+I love Desmos. All of the projects below are made using its [2D graphing](https://www.desmos.com/calculator) function, and I plan to make more with other functions, possibly [Geometry](https://www.desmos.com/geometry) or [3D](https://www.desmos.com/3d).
 
-# Desmos Projects
-
-## DeSyne
+# DeSyne
 [DeSyne](https://www.desmos.com/calculator/twlat5kmup) (pronounced like "design") is a synthesizer that I made for the [2023 Global Math Art Contest](https://www.desmos.com/art-2023).
 It:
 - can play all 4 fundamental waveforms: sine, triangle, square, sawtooth.
@@ -25,7 +25,7 @@ It:
 - supports polyphony, up to 312 notes theoretically
 - has draggable controls for everything, **including the keyboard**
 
-## Fractals
+# Fractals
 As Desmos now natively supports [Recursion](https://help.desmos.com/hc/en-us/articles/25917735966989-Recursion) and [Complex Numbers](https://help.desmos.com/hc/en-us/articles/31103542590733-Complex-Numbers), making fractals has become *easier than ever*. Here are a few that I made:
 - [Julia Set](https://www.desmos.com/calculator/zm2qtvihoc)
 - [Mandelbrot Set](https://www.desmos.com/calculator/x9whrwtwqx)
@@ -33,7 +33,7 @@ As Desmos now natively supports [Recursion](https://help.desmos.com/hc/en-us/art
   - Takes a while to load
   - This fractal is for \\( f(z) = z^3 - 1, \ z \in \mathbb{C} \\)
 
-## Kinematics
+# Kinematics
 Anything with moving things modelled after real-life classical kinematics.
 - [Accelerating Object](https://www.desmos.com/calculator/tn45iczs6m)
   - Click the metronome icon to start the simulation.
@@ -48,7 +48,7 @@ Anything with moving things modelled after real-life classical kinematics.
   - Drag the orange point at the bottom to change the point's angular acceleration.
   - Click the purple bar below the orange point to reset the angular acceleration to 0.
 
-## DesMoment
+# DesMoment
 [DesMoment](https://www.desmos.com/calculator/u57xjpsbnv) is a stopwatch in Desmos.
 - Click the metronome icon to start, and click it again to stop.
 - Click the arrow to the left of \\( F_{init}() \\) in the expressions panel to reset the stopwatch.
