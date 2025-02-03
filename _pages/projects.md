@@ -2,11 +2,10 @@
 title: "Projects"
 layout: splash
 permalink: /projects/
-date: 2016-03-23T11:48:41-04:00
+date: 2024-12-29T06:22:39Z
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-1.jpg
 excerpt: "I had quite some fun creating them."
 intro: 
   - excerpt: "**Click a category** to see projects created within that environment"

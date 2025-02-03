@@ -1,5 +1,7 @@
 ---
 layout: single
+needs_math: true # This page needs math typesetting
+# If you need chem typesetting, use needs_chem: true
 toc: true
 toc_label: "Quick jump"
 toc_icon: "file-alt"
@@ -50,6 +52,3 @@ Anything with moving things modelled after real-life classical kinematics.
 [DesMoment](https://www.desmos.com/calculator/u57xjpsbnv) is a stopwatch in Desmos.
 - Click the metronome icon to start, and click it again to stop.
 - Click the arrow to the left of \\( F_{init}() \\) in the expressions panel to reset the stopwatch.
-
-<!-- Add MathJax Support -->
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
