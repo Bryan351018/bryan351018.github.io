@@ -63,8 +63,8 @@ comments:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : "6LeGPMwqAAAAAE7SjKkxlUSn3CpQmzIb8f4idsk3"
+  secret                 : "6LeGPMwqAAAAALYpG5lOEV0WaogyN_4ZdU939soA"
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)

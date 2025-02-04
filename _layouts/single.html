@@ -58,6 +58,25 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+
+          <!-- Manage CC licenses for the page -->
+          {% case page.license %}
+          {% when "CC BY" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" alt="Licensed with CC BY" style="float: right">
+          {% when "CC BY-SA" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="Licensed with CC BY-SA" style="float: right">
+          {% when "CC BY-ND" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nd.svg" alt="Licensed with CC BY-ND" style="float: right">
+          {% when "CC BY-NC" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg" alt="Licensed with CC BY-NC" style="float: right">
+          {% when "CC BY-NC-SA" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licensed with CC BY-NC-SA" style="float: right">
+          {% when "CC BY-NC-ND" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" alt="Licensed with CC BY-NC-ND" style="float: right">
+          {% when "CC 0" %}
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="Licensed with CC0" style="float: right">
+          {% endcase %}
+
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
