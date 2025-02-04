@@ -26,10 +26,19 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
+    
     <div class="initial-content">
       {{ content }}
       {% include after-content.html %}
     </div>
+
+    <!-- If KaTeX is activated, do the auto-render magic -->
+    {% if page.needs_math or page.needs_chem %} 
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    {% endif %}
+
+    
 
     {% if site.search == true %}
       <div class="search-content">
@@ -45,11 +54,5 @@
     </div>
 
     {% include scripts.html %}
-
-    <!-- If KaTeX is activated, do the auto-render magic -->
-    {% if page.needs_math or page.needs_chem %} 
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-    {% endif %}
   </body>
 </html>

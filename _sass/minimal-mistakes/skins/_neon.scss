@@ -23,13 +23,17 @@ $notice-background-mix: 90% !default;
 $code-notice-background-mix: 95% !default;
 
 /* neon syntax highlighting (base16) */
-$base00: #ffffff !default;
+// $base00: #ffffff !default;
+$base00: #000000 !default;
 $base01: #e0e0e0 !default;
 $base02: #d0d0d0 !default;
 $base03: #b0b0b0 !default;
-$base04: #000000 !default;
-$base05: #101010 !default;
-$base06: #151515 !default;
+// $base04: #000000 !default;
+$base04: #ffffff !default;
+// $base05: #101010 !default;
+$base05: #e0e0e0 !default;
+// $base06: #151515 !default;
+$base06: #c0c0c0 !default;
 $base07: #202020 !default;
 $base08: #ff0086 !default;
 $base09: #fd8900 !default;
@@ -39,6 +43,18 @@ $base0c: #1faaaa !default;
 $base0d: #3777e6 !default;
 $base0e: #ad00a1 !default;
 $base0f: #cc6633 !default;
+
+// Custom syntax highlighting colors
+$syn-bg: black;
+$syn-fg: #c5c5c5;
+$syn-brightwhite: white;
+$syn-comment: #808080;
+$syn-aqua: aqua;
+$syn-lime: lime;
+$syn-magenta: magenta;
+$syn-number-blue: #3d9eff;
+$syn-string-green: #016b02;
+$syn-func-yellowgreen: #a0cc00;
 
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
