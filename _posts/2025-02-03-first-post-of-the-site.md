@@ -25,7 +25,7 @@ This is where Jekyll comes in. Instead of having to worry about the repetitive a
 
 Jekyll combines [Markdown](https://www.markdownguide.org/), HTML, and [YAML](https://yaml.org/) into an entire website. **Markdown** is used for the post, article, and menubar contents, while **YAML** is used for configuration files for the website.
 
-This post was written in Markdown, for example. Feel free to peek at the [source document](https://github.com/Bryan351018/bryan351018.github.io/blob/master/_posts/2025-02-03-first-post-of-the-site.md).
+This post was written in Markdown, for example. Feel free to peek at the [source document](https://github.com/Bryan351018/bryan351018.github.io/blob/master/_posts/2025-02-03-first-post-of-the-site.md?plain=1).
 
 
 ### Minimal Mistakes
