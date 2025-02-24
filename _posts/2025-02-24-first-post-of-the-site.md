@@ -93,12 +93,14 @@ function print_hello()
 
 ### Mathematics and chemistry rendering
 By enabling a configuration for this post, it can display inline math equations such as \\( f(z) = z^3 - 1, \ z \in \mathbb{C} \\),
-and even inline chemical entities like \\( \ce{H2O} \\).
+and even inline chemical entities like \\( \ce{H2O} \\). This is done thanks to the [\\( \KaTeX \\) library](https://katex.org/).
 
 Centered math equations and chemical entities can also be displayed, and they look even *better*:
 \\[ \sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^N (x_i -\mu)^2} \\]
 
 \\[ C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K} \\]
+
+Try **copying** any of the equations above, and pasting it somewhere else! It will paste as \\( \LaTeX \\) code.
 
 # Go forth!
 There's a comment section at the end of the page that you can play around with, but otherwise, thanks for showing interest in my website! See you soon.
