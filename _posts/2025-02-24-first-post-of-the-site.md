@@ -100,7 +100,7 @@ Centered math equations and chemical entities can also be displayed, and they lo
 
 \\[ C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K} \\]
 
-Try **copying** any of the equations above, and pasting it somewhere else! It will paste as \\( \LaTeX \\) code.
+Try **copying** any of the equations above, and pasting it somewhere else! It will paste as \\( \LaTeX \\) code (for browsers that support it).
 
 # Go forth!
 There's a comment section at the end of the page that you can play around with, but otherwise, thanks for showing interest in my website! See you soon.
