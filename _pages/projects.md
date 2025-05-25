@@ -21,7 +21,7 @@ feature_row:
     alt: "JavaScript"
     title: "JavaScript"
     excerpt: "Some big web apps, work in progress."
-    url: "#test-link"
+    url: "/projects/javascript/"
     btn_label: "View JavaScript Projects"
     btn_class: "btn--primary"
   - image_path: /assets/images/project_types/python.png
