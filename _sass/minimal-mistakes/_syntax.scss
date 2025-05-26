@@ -83,7 +83,7 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: $base05;
+    color: $syn-orange;
   }
   .o {
     /* Operator */
@@ -108,6 +108,10 @@ figure.highlight {
   .cs {
     /* Comment.Special */
     color: $syn-comment;
+  }
+  .dl {
+    /* Double quotes */
+    color: $syn-string-green;
   }
   .gd {
     /* Generic.Deleted */
@@ -234,7 +238,7 @@ figure.highlight {
   }
   .ow {
     /* Operator.Word */
-    color: $base0c;
+    color: $syn-aqua;
   }
   .w {
     /* Text.Whitespace */
