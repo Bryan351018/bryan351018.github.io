@@ -59,23 +59,27 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
 
-          <!-- Manage CC licenses for the page -->
-          {% case page.license %}
-          {% when "CC BY" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" alt="Licensed with CC BY" style="float: right">
-          {% when "CC BY-SA" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="Licensed with CC BY-SA" style="float: right">
-          {% when "CC BY-ND" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nd.svg" alt="Licensed with CC BY-ND" style="float: right">
-          {% when "CC BY-NC" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg" alt="Licensed with CC BY-NC" style="float: right">
-          {% when "CC BY-NC-SA" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licensed with CC BY-NC-SA" style="float: right">
-          {% when "CC BY-NC-ND" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" alt="Licensed with CC BY-NC-ND" style="float: right">
-          {% when "CC 0" %}
-              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="Licensed with CC0" style="float: right">
-          {% endcase %}
+        <!-- Assign Liquid variables to page date and author -->
+        {% assign page_date = page.date | date: "%Y" %}
+        {% assign page_author = page.author | default: site.author.name %}
+
+        <!-- Manage CC licenses for the page -->
+        {% case page.license %}
+            {% when "CC BY" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC BY-SA" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC BY-ND" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC BY-NC" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC BY-NC-SA" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC BY-NC-ND" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            {% when "CC 0" %}
+                <a href="#">{{ page.title }}</a> © {{ page_date }} by <a href="https://creativecommons.org">{{ page_author }}</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        {% endcase %}
 
       </footer>
 
