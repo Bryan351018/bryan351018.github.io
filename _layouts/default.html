@@ -3,23 +3,10 @@
 
 <!doctype html>
 {% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+<html lang="{{ site.locale | replace: '_', '-' | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-
-    <!-- LaTeX rendering support -->
-
-    <!-- If a page needs to display math or chem, enable KaTeX -->
-     {% if page.needs_math or page.needs_chem %} 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
-     {% endif %}
-
-     <!-- If a page needs to display chem, add mhchem support -->
-     {% if page.needs_chem %}
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH"  crossorigin="anonymous"></script>
-      {% endif %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
@@ -32,17 +19,6 @@
       
       {% include after-content.html %}
     </div>
-
-    <!-- If KaTeX is activated, do the auto-render magic -->
-    {% if page.needs_math or page.needs_chem %} 
-    <!-- Auto-render extension -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-    <!-- Copy-tex extension (so that formulae are copied as the LaTeX source) -->
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js" integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
-    {% endif %}
-
-    
 
     {% if site.search == true %}
       <div class="search-content">

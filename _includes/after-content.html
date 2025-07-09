@@ -1,0 +1,8 @@
+<!-- If KaTeX is activated, do the auto-render magic -->
+{% if page.needs_math or page.needs_chem %} 
+<!-- Auto-render extension -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+onload="renderMathInElement(document.body);"></script>
+<!-- Copy-tex extension (so that formulae are copied as the LaTeX source) -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js" integrity="sha384-HORx6nWi8j5/mYA+y57/9/CZc5z8HnEw4WUZWy5yOn9ToKBv1l58vJaufFAn9Zzi" crossorigin="anonymous"></script>
+{% endif %}
